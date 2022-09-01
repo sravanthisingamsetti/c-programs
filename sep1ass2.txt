@@ -1,0 +1,20 @@
+2.factorial of a number using functions?
+#include <stdio.h>
+int fact(int n)
+{
+    if(n==0)
+    return 1;
+    else
+    return(n*fact(n-1));
+}
+void main()
+{
+    int n,f;
+    printf("ente a number:");
+    scanf("%d",&n);
+    f=fact(n);
+    printf("%d",f);
+}
+output:
+enter a number:5
+120
