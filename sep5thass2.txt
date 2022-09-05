@@ -1,0 +1,19 @@
+2.READ N VALUE,READ N ELEMENTS INTO ARRAY,PRINT N ELEMENTS WITHOUT USING FOR LOOP?
+#include <stdio.h>
+int main()
+{
+int n;
+scanf("%d",&n);
+display(1,n);
+}
+void display(int start,int end)
+{
+    if(start>end)
+    return;
+    else
+    printf("%d\t",start);
+    display(start+1,end);
+}
+OUTPUT:
+5
+1	2	3	4	5	
